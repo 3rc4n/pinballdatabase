@@ -1,0 +1,5 @@
+pinball_pinball:
+    resource: "@PinballPinballBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

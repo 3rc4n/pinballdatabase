@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 22, 2014, 5:42:35 PM
+    Author     : dougy
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+    background-color: rgb( 137, 195, 235 );
+    
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+header {
+    height: 50px;
+}
+
+header ul li {
+    display: inline;
+    margin: 15px;
+}
+
+h1 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+section#body {
+    margin: 10px;
+    background-color: rgb(234,234,234);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    height: 50px;
+    background: #999999; /* Old browsers */
+background: -moz-linear-gradient(top, #999999 0%, #98bf21 50%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(50%,#98bf21), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #999999 0%,#98bf21 50%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #999999 0%,#98bf21 50%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #999999 0%,#98bf21 50%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #999999 0%,#98bf21 50%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+td {
+    height: 50px;
+    vertical-align: center;
+    padding: 5px;
+}
+
+tr.even {
+    background: #999999; /* Old browsers */
+background: -moz-linear-gradient(top, #999999 0%, #b9bcad 50%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(50%,#b9bcad), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #999999 0%,#b9bcad 50%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #999999 0%,#b9bcad 50%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #999999 0%,#b9bcad 50%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #999999 0%,#b9bcad 50%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+tr.odd {
+    background: #f2f2f2; /* Old browsers */
+background: -moz-linear-gradient(top, #f2f2f2 0%, #eaeaea 50%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(50%,#eaeaea), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f2f2f2 0%,#eaeaea 50%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f2f2f2 0%,#eaeaea 50%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f2f2f2 0%,#eaeaea 50%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f2f2f2 0%,#eaeaea 50%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}

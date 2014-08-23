@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        
+        <header>
+            <ul>
+                <li>
+                    <a href="{{ path('tables') }}">Table List</a>
+                </li>
+                <li>
+                    <a href="{{ path('manufacturer') }}">Manufacturer List</a>
+                </li>
+                <li>
+                    <a href="{{ path('tables_new') }}">Add Table</a>
+                </li>
+                <li>
+                    <a href="{{ path('manufacturer_new') }}">Add Manufacturer</a>
+                </li>
+            </ul>
+        </header>
+        <section id="body">
+            {% block body %}{% endblock %}
+        </section>
+        <footer></footer>
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

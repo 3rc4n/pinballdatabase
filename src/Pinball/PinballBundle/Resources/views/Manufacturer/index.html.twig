@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Manufacturer list</h1>
+
+    <table class="manufacturer_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr class="{{ cycle(['odd', 'even'], loop.index0) }}">
+                <td><a href="{{ path('manufacturer_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.name }}</td>
+                
+                <td>
+                        <a href="{{ path('manufacturer_show', { 'id': entity.id }) }}">show</a>
+                </td>
+                <td>
+                        <a href="{{ path('manufacturer_edit', { 'id': entity.id }) }}">edit</a>
+                </td>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('manufacturer_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
